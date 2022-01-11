@@ -10,20 +10,37 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #f3f1ff;
 }
+main{
+    display: flex;
+    justify-content: center;
+}
 .container{
     background-color: #fff;
+    width: 870px;
+    padding: 30px;
 }
 /* Top Players */
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-bottom: 33px;
+}
 .players{
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 1fr 1fr 1fr ;
+    grid-row-gap: 30px;
 }
 .player{
     display: flex;
     align-items: center;
+
 }
 .player img{
     width: 56px;
     height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
 }
