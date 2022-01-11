@@ -1,4 +1,29 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Common Styles */
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+}
+.container{
+    background-color: #fff;
+}
+/* Top Players */
+.players{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
 }
