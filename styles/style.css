@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 /* Common Styles */
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f3f1ff;
@@ -19,11 +15,17 @@ main{
     width: 870px;
     padding: 30px;
 }
+hr{
+    border: 1px solid #D1D1D1;
+}
 /* Top Players */
+.top-players{
+    margin-bottom: 30px;
+}
 .section-title{
     color: #562EFF;
     font-size: 24px;
-    margin-bottom: 33px;
+    margin-top: 3px;
 }
 .players{
     display: grid;
