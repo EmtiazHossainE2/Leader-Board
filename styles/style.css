@@ -8,12 +8,15 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: #fff;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -48,9 +51,9 @@ hr{
     font-size: 18px;
 }
 
-/*******************
+/*----------------------
  Top Blogs Area  
- *******************/
+ -----------------------*/
  .blogs{
      display: grid;
      grid-template-columns: repeat(2,1fr);
@@ -79,3 +82,80 @@ hr{
     color: #562EFF;
  }
 
+ /*----------------
+     Courses
+ ----------------- */
+ .courses{
+     display: flex;
+     justify-content: space-between;
+ }
+ .course .course-banner img{
+    width: 224px;
+    height: 104px;
+ }
+ .course-author{
+     color:  #ED6B4F;
+ }
+ .course-details{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .fas {
+     color: #FFC014;
+     font-size: 12px;
+ }
+ .far{
+     color: #AEAEAE;
+     font-size: 12px;
+ }
+ .course-duration{
+     background-color: #FFE4E8 ;
+     color: #ED6B4F;
+     padding: 3px 5px;
+     border-radius: 14.6913px;
+ }
+ .far.fa-clock{
+    color:#ED6B4F ;
+    font-size: 16.69px;
+ }
+
+ /* -------------------- 
+    Media Query  
+-------------------- */ 
+/* Mobile Device */
+@media only screen and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player,.courses {
+        flex-direction: column;
+    } 
+    .blog{
+        align-items: center;
+        flex-direction: column;
+    }
+    .blog-title{
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .courses{
+        align-items: center;
+    }
+    .course{
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 2px solid gainsboro;
+        border-radius: 5px;
+    }
+}
