@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <!-- header start -->
     <header>
@@ -20,7 +22,7 @@
         <section class="container">
             <!-- Top Players -->
             <div class="top-players ">
-                <h2 class="section-title">Top Player</h2>
+                <h2 id="top-player" class="section-title">Top Player</h2>
                 <div class="players">
                     <!-- .player*6>img[src="images/players/player-$.png"]+h3{Top Player - $} -->
                     <div class="player">
@@ -48,10 +50,11 @@
                         <h3 class="player-name">Doraemon</h3>
                     </div>
                 </div>
-            </div> <hr>
+            </div>
+            <hr>
             <!-- Top Blogs -->
             <div class="top-blogs ">
-                <h2 class="section-title">Top Blogs</h2>
+                <h2 id="top-blog" class="section-title">Top Blogs</h2>
                 <div class="blogs">
                     <article class="blog">
                         <div class="thumbnail">
@@ -93,7 +96,7 @@
             </div>
         </section>
         <section class="container">
-            <h2 class="section-title">Latest Courses</h2>
+            <h2 id="latest-course" class="section-title">Latest Courses</h2>
             <div class="courses">
                 <div class="course">
                     <div class="course-banner">
@@ -122,7 +125,7 @@
                         <img src="images/courses/course-2.png" alt="">
                     </div>
                     <div class="course-info">
-                        <h3 class="course-title">Powerpoint 2020  <br> Master Powerpoint Cour </h3>
+                        <h3 class="course-title">Powerpoint 2020 <br> Master Powerpoint Cour </h3>
                         <p class="course-author">Walter Scott</p>
                     </div>
                     <div class="course-details">
@@ -144,7 +147,7 @@
                         <img src="images/courses/course-3.png" alt="">
                     </div>
                     <div class="course-info">
-                        <h3 class="course-title">The Complete JavaScript  <br> Course 2022 </h3>
+                        <h3 class="course-title">The Complete JavaScript <br> Course 2022 </h3>
                         <p class="course-author">Reed Krakoff.</p>
                     </div>
                     <div class="course-details">
@@ -164,5 +167,21 @@
             </div>
         </section>
     </main>
+    <footer>
+        <ul id="list-parent">
+            <li>Lorem, ipsum.</li>
+            <li>Aut, dicta!</li>
+            <li>Numquam, ea.</li>
+            <li>Quam, ut.</li>
+            <li>Quasi, doloremque?</li>
+        </ul>
+        <button id="add-list" type="button">Add Element</button> <br> <br>
+        <button onclick="minusBtn()" type="button">-</button>
+        <input type="number" name="" id="input-field" value="1">
+        <button onclick="plusBtn()" type="button">+</button>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
